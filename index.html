@@ -1,180 +1,77 @@
-&lt;!DOCTYPE html&gt;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EPDR Ltd | Electrical, Solar & Commercial Power Solutions</title>
+  <meta name="description" content="Electrical Power Development & Restoration Ltd provides electrical, solar, panel servicing, power quality, and commercial electrical solutions across Jamaica." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; color: #15202b; background: #f7f8fa; line-height: 1.6; }
+    header { background: #061a2f; color: white; padding: 28px 8%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-size: 24px; font-weight: 800; letter-spacing: 1px; }
+    .tagline { color: #d6b25e; font-size: 14px; margin-top: 4px; }
+    .header-contact { font-size: 14px; text-align: right; }
+    .hero {
+      background: linear-gradient(rgba(6,26,47,.88), rgba(6,26,47,.88)),
+      url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 90px 8%;
+    }
+    .hero-content { max-width: 850px; }
+    .hero h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.08; margin-bottom: 22px; }
+    .hero p { font-size: 20px; max-width: 760px; margin-bottom: 30px; color: #e8eef5; }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 14px 22px; border-radius: 6px; text-decoration: none; font-weight: 700; }
+    .btn-primary { background: #d6b25e; color: #061a2f; }
+    .btn-secondary { border: 2px solid white; color: white; }
+    section { padding: 64px 8%; }
+    .section-title { font-size: 32px; color: #061a2f; margin-bottom: 16px; }
+    .intro { max-width: 900px; font-size: 18px; color: #3b4a5a; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; margin-top: 32px; }
+    .card { background: white; padding: 26px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.06); border-top: 4px solid #d6b25e; }
+    .card h3 { color: #061a2f; margin-bottom: 10px; font-size: 20px; }
+    .card p { color: #4b5c6d; }
+    .dark { background: #061a2f; color: white; }
+    .dark .section-title { color: white; }
+    .dark .intro { color: #dfe8f1; }
+    .list { margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .list div { background: rgba(255,255,255,.08); padding: 16px; border-radius: 8px; }
+    .cta { background: #d6b25e; color: #061a2f; text-align: center; }
+    .cta h2 { font-size: 36px; margin-bottom: 14px; }
+    .cta p { font-size: 18px; margin-bottom: 24px; }
+    .cta .btn { background: #061a2f; color: white; }
+    footer { background: #020b14; color: #cfd8e3; padding: 32px 8%; font-size: 14px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    footer strong { color: white; }
+  </style>
+</head>
+<body>
 
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot; /&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-&lt;title&gt;EPDR Ltd | Electrical, Solar &amp; Commercial Power Solutions&lt;/title&gt;
-&lt;meta name=&quot;description&quot; content=&quot;Electrical Power Development &amp; Restoration Ltd
-provides electrical, solar, panel servicing, power quality, and commercial electrical solutions
-across Jamaica.&quot; /&gt;
-&lt;style&gt;
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Arial, Helvetica, sans-serif; color: #15202b; background: #f7f8fa; line-
-height: 1.6; }
-header { background: #061a2f; color: white; padding: 28px 8%; display: flex; justify-content:
-space-between; align-items: center; flex-wrap: wrap; }
-.logo { font-size: 24px; font-weight: 800; letter-spacing: 1px; }
-.tagline { color: #d6b25e; font-size: 14px; margin-top: 4px; }
-.header-contact { font-size: 14px; text-align: right; }
-.hero { background: linear-gradient(rgba(6,26,47,.88), rgba(6,26,47,.88)),
-url(&#39;https://images.unsplash.com/photo-1621905252507-
-b35492cc74b4?auto=format&amp;fit=crop&amp;w=1600&amp;q=80&#39;); background-size: cover; background-
-position: center; color: white; padding: 90px 8%; }
-.hero-content { max-width: 850px; }
-.hero h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.08; margin-bottom: 22px; }
-.hero p { font-size: 20px; max-width: 760px; margin-bottom: 30px; color: #e8eef5; }
-.buttons { display: flex; gap: 14px; flex-wrap: wrap; }
-.btn { display: inline-block; padding: 14px 22px; border-radius: 6px; text-decoration: none;
-font-weight: 700; }
-.btn-primary { background: #d6b25e; color: #061a2f; }
+<header>
+  <div>
+    <div class="logo">EPDR LTD</div>
+    <div class="tagline">Electrical Power Development & Restoration</div>
+  </div>
+  <div class="header-contact">
+    Jamaica-Based Electrical & Solar Contractor<br />
+    Email: info@epdrltd.com | Tel: 18764187440
+  </div>
+</header>
 
-.btn-secondary { border: 2px solid white; color: white; }
-section { padding: 64px 8%; }
-.section-title { font-size: 32px; color: #061a2f; margin-bottom: 16px; }
-.intro { max-width: 900px; font-size: 18px; color: #3b4a5a; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px;
-margin-top: 32px; }
-.card { background: white; padding: 26px; border-radius: 12px; box-shadow: 0 8px 24px
-rgba(0,0,0,.06); border-top: 4px solid #d6b25e; }
-.card h3 { color: #061a2f; margin-bottom: 10px; font-size: 20px; }
-.card p { color: #4b5c6d; }
-.dark { background: #061a2f; color: white; }
-.dark .section-title { color: white; }
-.dark .intro { color: #dfe8f1; }
-.list { margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,
-1fr)); gap: 14px; }
-.list div { background: rgba(255,255,255,.08); padding: 16px; border-radius: 8px; }
-.cta { background: #d6b25e; color: #061a2f; text-align: center; }
-.cta h2 { font-size: 36px; margin-bottom: 14px; }
-.cta p { font-size: 18px; margin-bottom: 24px; }
-.cta .btn { background: #061a2f; color: white; }
-footer { background: #020b14; color: #cfd8e3; padding: 32px 8%; font-size: 14px; display:
-flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-footer strong { color: white; }
-@media (max-width: 720px) { .header-contact { text-align: left; margin-top: 14px; } .hero {
-padding: 70px 8%; } }
-&lt;/style&gt;
-&lt;/head&gt;
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Electrical, Solar & Commercial Power Solutions Built for Serious Properties</h1>
+      <p>EPDR Ltd supports hotels, villas, developers, commercial facilities, and private clients across Jamaica.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="mailto:info@epdrltd.com">Request a Site Assessment</a>
+        <a class="btn btn-secondary" href="tel:18764187440">Call EPDR</a>
+      </div>
+    </div>
+  </section>
+</main>
 
-&lt;body&gt;
-&lt;header&gt;
-&lt;div&gt;
-&lt;div class=&quot;logo&quot;&gt;EPDR LTD&lt;/div&gt;
-&lt;div class=&quot;tagline&quot;&gt;Electrical Power Development &amp; Restoration&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;header-contact&quot;&gt;
-Jamaica-Based Electrical &amp; Solar Contractor&lt;br /&gt;
-Email: info@epdrltd.com | Tel: [Insert Phone Number]
-&lt;/div&gt;
-&lt;/header&gt;
-
-&lt;main&gt;
-&lt;section class=&quot;hero&quot;&gt;
-&lt;div class=&quot;hero-content&quot;&gt;
-&lt;h1&gt;Electrical, Solar &amp; Commercial Power Solutions Built for Serious Properties&lt;/h1&gt;
-&lt;p&gt;EPDR Ltd supports hotels, villas, developers, commercial facilities, and private clients
-across Jamaica with code-aligned electrical works, solar systems, power restoration, panel
-servicing, and technical reporting.&lt;/p&gt;
-&lt;div class=&quot;buttons&quot;&gt;
-&lt;a class=&quot;btn btn-primary&quot;
-href=&quot;mailto:info@epdrltd.com?subject=Request%20for%20Site%20Assessment&quot;&gt;Request a
-Site Assessment&lt;/a&gt;
-&lt;a class=&quot;btn btn-secondary&quot; href=&quot;tel:[InsertPhoneNumber]&quot;&gt;Call EPDR&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-&lt;h2 class=&quot;section-title&quot;&gt;About EPDR&lt;/h2&gt;
-&lt;p class=&quot;intro&quot;&gt;Electrical Power Development &amp; Restoration Ltd is a Jamaican electrical
-and solar contracting company focused on reliable execution, professional reporting, and
-practical solutions for complex electrical environments. We work with commercial properties,
-hospitality facilities, residential developments, villas, and infrastructure-type projects where
-safety, uptime, and compliance matter.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-&lt;h2 class=&quot;section-title&quot;&gt;Core Services&lt;/h2&gt;
-&lt;div class=&quot;grid&quot;&gt;
-&lt;div class=&quot;card&quot;&gt;
-&lt;h3&gt;Commercial Electrical Works&lt;/h3&gt;
-&lt;p&gt;Electrical installations, upgrades, corrective works, distribution systems, panel rooms,
-and property-wide electrical support.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;card&quot;&gt;
-&lt;h3&gt;Solar PV &amp; Battery Systems&lt;/h3&gt;
-&lt;p&gt;Solar design, inverter systems, battery backup, energy assessments, and commercial
-solar project support.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;card&quot;&gt;
-&lt;h3&gt;Panel Servicing &amp; Remediation&lt;/h3&gt;
-&lt;p&gt;Panel inspection, cleaning, tightening, testing, load assessment, defect identification,
-and corrective recommendations.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;card&quot;&gt;
-&lt;h3&gt;Power Quality &amp; Fault Investigation&lt;/h3&gt;
-&lt;p&gt;Voltage imbalance checks, cable testing, abnormal voltage investigations, power
-restoration, and technical reporting.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;card&quot;&gt;
-&lt;h3&gt;Lightning Protection Support&lt;/h3&gt;
-&lt;p&gt;Lightning protection inspection, reinstatement, earthing review, down conductor
-assessment, and storm-damage remediation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;card&quot;&gt;
-&lt;h3&gt;Technical Reports &amp; Compliance Support&lt;/h3&gt;
-&lt;p&gt;Professional inspection reports, scope documents, recommendations, and project
-documentation for clients and stakeholders.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;dark&quot;&gt;
-&lt;h2 class=&quot;section-title&quot;&gt;Why Clients Work With EPDR&lt;/h2&gt;
-&lt;p class=&quot;intro&quot;&gt;EPDR is built for clients who need more than basic electrical labour. We
-provide organized execution, practical problem-solving, proper documentation, and a strong
-focus on safety and long-term reliability.&lt;/p&gt;
-&lt;div class=&quot;list&quot;&gt;
-&lt;div&gt;Hospitality and commercial property experience&lt;/div&gt;
-&lt;div&gt;Clear scopes, estimates, and reporting&lt;/div&gt;
-&lt;div&gt;Code-aware electrical recommendations&lt;/div&gt;
-
-&lt;div&gt;Responsive field teams and project support&lt;/div&gt;
-&lt;div&gt;Solar, electrical, and power restoration capability&lt;/div&gt;
-&lt;div&gt;Professional communication with owners, engineers, and facility managers&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-&lt;h2 class=&quot;section-title&quot;&gt;Industries Served&lt;/h2&gt;
-&lt;div class=&quot;grid&quot;&gt;
-&lt;div class=&quot;card&quot;&gt;&lt;h3&gt;Hotels &amp; Resorts&lt;/h3&gt;&lt;p&gt;Electrical maintenance, inspections,
-corrective works, panel servicing, and infrastructure support.&lt;/p&gt;&lt;/div&gt;
-&lt;div class=&quot;card&quot;&gt;&lt;h3&gt;Villas &amp; Private Estates&lt;/h3&gt;&lt;p&gt;Electrical installations, upgrades,
-solar systems, backup power, and troubleshooting.&lt;/p&gt;&lt;/div&gt;
-&lt;div class=&quot;card&quot;&gt;&lt;h3&gt;Developers &amp; Contractors&lt;/h3&gt;&lt;p&gt;Project electrical works,
-temporary power support, distribution planning, and site coordination.&lt;/p&gt;&lt;/div&gt;
-&lt;div class=&quot;card&quot;&gt;&lt;h3&gt;Commercial Facilities&lt;/h3&gt;&lt;p&gt;Service upgrades, testing,
-compliance support, and ongoing electrical maintenance.&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;cta&quot;&gt;
-&lt;h2&gt;Need Electrical or Solar Support?&lt;/h2&gt;
-&lt;p&gt;Send us your project details and EPDR will respond with the next step.&lt;/p&gt;
-&lt;a class=&quot;btn&quot;
-href=&quot;mailto:info@epdrltd.com?subject=Request%20for%20EPDR%20Support&quot;&gt;Contact EPDR
-Today&lt;/a&gt;
-&lt;/section&gt;
-&lt;/main&gt;
-
-&lt;footer&gt;
-&lt;div&gt;&lt;strong&gt;EPDR Ltd&lt;/strong&gt;&lt;br /&gt;Electrical Power Development &amp; Restoration Ltd&lt;br
-/&gt;Jamaica&lt;/div&gt;
-&lt;div&gt;Email: info@epdrltd.com&lt;br /&gt;Phone: 18764187440&lt;br /&gt;Website:
-epdrltd.com&lt;/div&gt;
-&lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+</body>
+</html>
